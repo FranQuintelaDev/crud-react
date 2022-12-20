@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { useState, useEffect, useRef } from "react";
-import { Link, useParams } from "react-router-dom";
+import React from 'react';
+import { useState, useEffect } from "react";
+import {  useParams } from "react-router-dom";
 import Modal from '../components/Modal';
 import { useNavigate } from "react-router-dom";
 
@@ -19,7 +19,7 @@ export default function UsersDetail() {
     phoneNumber: "",
   });
 
-  let { userId } = useParams();
+  const { userId } = useParams();
 
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function UsersDetail() {
         }
       );
 
-  }, [])
+  }, [userId])
 
 
   const handleChangeUser = (event) => {
