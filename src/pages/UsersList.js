@@ -17,7 +17,7 @@ export default function UsersList() {
 
   useEffect(() => {
 
-    fetch("http://localhost:8080/api/users")
+    fetch("https://sandbox-demo.azuremicroservices.io/api/users")
       .then(res => res.json())
       .then(
         (data) => {
@@ -48,7 +48,7 @@ export default function UsersList() {
         })
     };
 
-    fetch("http://localhost:8080/api/users", requestOptions)
+    fetch("https://sandbox-demo.azuremicroservices.io/api/users", requestOptions)
       .then(res => res.json())
       .then(
         (data) => {

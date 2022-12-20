@@ -24,7 +24,7 @@ export default function UsersDetail() {
 
   useEffect(() => {
 
-    fetch("http://localhost:8080/api/users/" + userId)
+    fetch("https://sandbox-demo.azuremicroservices.io/api/users/" + userId)
       .then(res => res.json())
       .then(
         (data) => {
@@ -56,7 +56,7 @@ export default function UsersDetail() {
         })
     };
 
-    fetch("http://localhost:8080/api/users/" + userId, requestOptions)
+    fetch("https://sandbox-demo.azuremicroservices.io/api/users/" + userId, requestOptions)
       .then(res => res.json())
       .then(
         (data) => {
@@ -75,7 +75,7 @@ export default function UsersDetail() {
       method: 'DELETE'
     };
 
-    fetch("http://localhost:8080/api/users/" + userId, requestOptions)
+    fetch("https://sandbox-demo.azuremicroservices.io/api/users/" + userId, requestOptions)
       .then(res => {
         console.log(res.json())
         navigate("/");
