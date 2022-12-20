@@ -1,0 +1,94 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+}
+
+.cols {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.fluid {
+  width: 100%;
+}
+
+.j-c-space-between {
+  justify-content: space-between;
+}
+.al-i-center {
+  align-items: center;
+}
+.pd-x {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.pd-y{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.centeredPage{
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  border-radius: 10px 10px 10px 10px;
+}
+
+#isClientText{
+  font-weight: bold;
+  color:lightgreen
+}
+#isOpportunityText{
+  font-weight: bold;
+  color:lightblue
+}
+/* .bg-client{
+  background-color:lightgreen
+}
+.bg-opp{
+  background-color: lightblue;
+} */
